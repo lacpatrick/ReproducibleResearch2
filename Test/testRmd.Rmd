@@ -1,0 +1,23 @@
+---
+title: "Learning Rmarkdown"
+author: "Patrick Lac"
+date: "version `r format(Sys.time(), '%D')`"
+output:
+  html_document:
+    toc: yes
+    toc_float:
+      collapsed: no
+  pdf_document:
+    toc: yes
+    latex_engine: xelatex
+---
+
+# Header 1
+
+## Subheading 1A
+
+# Header 2
+
+## Subheading 2A
+
+## Subheading 2B

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549573390301.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2973396296",
+    "id" : "92D40459",
+    "lastKnownWriteTime" : 1549574243,
+    "last_content_update" : 1549574243181,
+    "path" : "C:/Git/Reproducible Research/Test/Challenge.Rmd",
+    "project_path" : "Challenge.Rmd",
+    "properties" : {
+        "cursorPosition" : "48,0",
+        "scrollLine" : "34",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

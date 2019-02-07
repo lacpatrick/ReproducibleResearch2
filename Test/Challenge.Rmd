@@ -1,0 +1,48 @@
+---
+title: "Introduction to R"
+author: "Kim Dill-McFarland & Kris Hong"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: yes
+    toc_float:
+      collapsed: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+In this workshop, we introduce you to R and RStudio at the beginner level. This condensed __2-hour workshop__ is meant to get you started in R and acts as a pre-requisite for our more advanced workshops. In it, we cover:
+
+* R and RStudio
+    + RStudio projects
+    + R scripts
+    + Installing packages
+* Reading in data as a data frame
+* Vectors, single values, and data types
+* Basic data visualization
+* The help function
+
+We will do all our work in [RStudio](https://www.rstudio.com/). RStudio is an integrated development and analysis environment for R that brings a number of conveniences over using R in a terminal or other editing environments. You should have both R and RStudio installed, as described in the [setup instructions](http://asda.stat.ubc.ca/workshops/2019-02_Ecoscope_reproducible/setup.html).
+
+## A Tour of RStudio
+When you start RStudio, you will see something like the following window appear:
+![](http://asda.stat.ubc.ca/workshops/2019-02_Ecoscope_reproducible/images/rstudio.png)
+
+## Getting Started
+###Loading data into an R dataframe
+We will store the data as an _object_ named `dat` using the assignment operator <-, so that we can re-use it in our analysis.
+
+``` {r dat, echo=TRUE}
+# read the data and save it as an object
+
+dat <- read.table(file="data.csv", sep=",", header=TRUE, stringsAsFactors=FALSE)
+```
+Now we can refer to the data frame as `dat` like so.
+``` {r dat2, echo = TRUE}
+dat
+```
+### Data visualization with quickplot

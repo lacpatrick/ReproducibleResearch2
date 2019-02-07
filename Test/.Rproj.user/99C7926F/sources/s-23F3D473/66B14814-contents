@@ -1,0 +1,24 @@
+---
+title: "STAT540 Project"
+author: "Patrick Lac"
+date: "February 6, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+``` {r libraries, echo=FALSE}
+library(GEOquery)
+library(biomaRt)
+library(tidyverse)
+library(data.table)
+library(reshape2)
+```
+
+Getting datasets
+```{r GEOdata, echo=FALSE}
+X <- getGEO("GSE19429")
+Y <- getGEO("GSE15061")
+```
